@@ -1,0 +1,12 @@
+im generally satisfied with how this turned out
+although i massively underestimated how much work certain parts do take and i havent even touched any more advanced topics
+
+mistakes:
+	macros
+		lack standard, complete mess, often broke video specific code because i forgot that macros modify certain registers
+	keyboard
+		should have been more abstracted
+		buffer shouldnt be part of implementation
+
+
+yup, `not finished, interface still may change` was me handwaving documentation

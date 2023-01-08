@@ -27,14 +27,14 @@ main project:
 ```
 nasm -f bin boot.asm
 nasm -f bin kernel.asm
-cat 
+cat boot > disk.raw && cat kernel >> disk.raw
 ```
 utilities:
 ```
 g++ -O3 utility/<filename>.cpp
 ```
 
-you also need to add files that are specified in kernel.asm by `%include "<filename>.txt" 
+you also need to add files that are specified in kernel.asm by `%include "<filename>.txt` 
 font is already here
 or you can comment these lines and everything will work, except for music and images
 
@@ -45,11 +45,11 @@ im generally satisfied with how this turned out
 although i massively underestimated how much work certain parts do take and i havent even touched any more advanced topics
 
 mistakes:
-	macros
-		lack standard, complete mess, often broke video specific code because i forgot that macros modify certain registers
-	keyboard
-		should have been more abstracted
-		buffer shouldnt be part of implementation
+ * macros
+	* lack standard, complete mess, often broke video specific code because i forgot that macros modify certain registers
+ * keyboard
+	* should have been more abstracted
+	buffer shouldnt be part of implementation
 
 
 yup, `not finished, interface still may change` was me handwaving documentation
